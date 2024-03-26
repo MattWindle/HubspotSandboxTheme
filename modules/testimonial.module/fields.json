@@ -1,0 +1,87 @@
+[ {
+  "id" : "6e51fed8-c465-c557-6b45-6c439b0f3066",
+  "name" : "customer_name",
+  "display_width" : null,
+  "label" : "Customer Name",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Sally"
+}, {
+  "id" : "b4cbaa0e-dcc4-6192-8e7c-22e33d407ce0",
+  "name" : "profile_pic",
+  "display_width" : null,
+  "label" : "Profile Picture",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://144398372.fs1.hubspotusercontent-eu1.net/hubfs/144398372/IMG_1294.jpg",
+    "alt" : "Sally profile Picture",
+    "loading" : "lazy",
+    "width" : 1041,
+    "height" : 1389,
+    "max_width" : 1041,
+    "max_height" : 1389
+  }
+}, {
+  "id" : "add2f024-df18-45f5-831d-0af76968dd3d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b5ce3380-3df8-4af3-3ee8-4e250552490e",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#EEEEEE",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "f6633042-5c4e-29d5-074f-9ed38379f86d",
+    "name" : "border_radius",
+    "display_width" : null,
+    "label" : "Border Radius",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "12px", "Rounded " ], [ "50%", "Rounded Full" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "50%"
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : "#EEEEEE",
+      "opacity" : 100
+    },
+    "border_radius" : "50%"
+  }
+}, {
+  "id" : "753f15fa-dc95-541c-6b68-4f6b575b8ae3",
+  "name" : "testimonial",
+  "display_width" : null,
+  "label" : "Testimonial",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "I had an amazing experience with this company! They are amazing and I would buy from them again.&nbsp;"
+} ]

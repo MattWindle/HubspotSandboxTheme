@@ -1,0 +1,21 @@
+{% require_css %}
+  <style>
+  {% scope_css %}
+    .testimonial {
+    {% if module.style.background_color.color %}
+      background-color: {{ module.style.background_color.color }};
+    {% endif %}
+    }
+    .testimonial__picture{
+      border-radius: {{ module.style.border_radius }}
+    }
+  {% end_scope_css %}
+  </style>
+  {% end_require_css %}
+
+<!-- module.html -->
+<div class="testimonial">
+  <h1 class="testimonial__header"> {{ module.customer_name }} </h1>
+  <img class="testimonial__picture" src={{ module.profile_pic.src }} alt={{ module.profile_pic.alt }}>
+  <p class="testimonial__text">{{ module.testimonial }}</p>
+</div>
